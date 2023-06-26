@@ -2,3 +2,11 @@
 .dropdown-item {
   cursor: pointer;
 }
+
+.form-input-placeholder::placeholder {
+  color: black;
+}
+
+.username-style {
+  color: #375a7f;
+}
