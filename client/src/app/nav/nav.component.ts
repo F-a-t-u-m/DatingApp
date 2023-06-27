@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable, of } from 'rxjs';
 
 import { AccountService } from '../services/account.service';
-import { User } from '../models/user';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 
@@ -28,9 +26,6 @@ export class NavComponent implements OnInit {
     this.accountService.login(this.model).subscribe({
       next: () => {
         this.router.navigateByUrl('/members');
-      },
-      error: error => {
-        this.toastr.error(error.error);
       }
     })
   }
