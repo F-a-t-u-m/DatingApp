@@ -1,0 +1,13 @@
+.nv-file-over {
+  border: 3px dotted rgb(243, 156, 18);
+}
+
+input[type=file] {
+  color: transparent;
+}
+
+.photo-btns {
+  display: flex;
+  justify-content: space-between;
+  padding: 1px 2px;
+}
