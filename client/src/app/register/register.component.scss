@@ -5,3 +5,11 @@
 .button-block {
   text-align: center;
 }
+
+.sign-up-form::placeholder {
+  color: var(--bs-body-bg);
+}
+
+.radio-register {
+  margin-right: 10px;
+}
