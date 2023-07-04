@@ -1,0 +1,25 @@
+.custom-pagination::ng-deep .page-item .page-link {
+  color: #FFFFFF;
+  background-color: var(--bs-body-bg);
+  border: 1px solid rgb(48, 48, 48);
+}
+
+.custom-pagination::ng-deep .page-item.active .page-link {
+  background-color: rgb(48, 48, 48);
+}
+
+.custom-pagination::ng-deep .page-item:hover .page-link {
+  background-color: rgb(80, 80, 80);
+}
+
+.custom-pagination::ng-deep .page-item.disabled .page-link {
+  color: rgb(80, 80, 80);
+}
+
+.input-styles {
+  width: 70px;
+}
+
+.select-styles {
+  width: 140px;
+}
