@@ -4,6 +4,7 @@ using API.Extensions;
 using API.Helpers;
 using API.Interfaces;
 using AutoMapper;
+using CloudinaryDotNet.Actions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -29,7 +30,7 @@ namespace API.Controllers
 		}
 
 		[HttpGet]
-		public async Task<ActionResult<PagedList<MemberDto>>> GetUsers([FromQuery]UserParams userParams)
+		public async Task<ActionResult<PagedList<MemberDto>>> GetUsers([FromQuery] UserParams userParams)
 		{
 			var currentUser = await _userRepository.GetUserByUsernameAsync(User.GetUsername());
 			userParams.CurrentUsername = currentUser.UserName;
