@@ -47,7 +47,7 @@ export class UserManagementComponent implements OnInit {
       next: () => {
         const selectedRoles = this.bsModalRef.content?.selectedRoles;
         if (!this.arrayEqual(selectedRoles!, user.roles)) {
-          this.adminService.updateUserRoles(user.username, selectedRoles!).subscribe({
+          this.adminService.updateUserRoles(user.username, selectedRoles!.join(',')).subscribe({
             next: roles => user.roles = roles
           })
         }
@@ -56,7 +56,7 @@ export class UserManagementComponent implements OnInit {
   }
 
   private arrayEqual(arr1: any[], arr2: any[]) {
-    return JSON.stringify(arr1?.sort()) === JSON.stringify(arr2?.sort());
+    return JSON.stringify(arr1.sort()) === JSON.stringify(arr2.sort());
   }
 
 }
