@@ -11,3 +11,20 @@ input[type=file] {
   justify-content: space-between;
   padding: 1px 2px;
 }
+
+.not-approved {
+  opacity: 0.2;
+}
+
+.img-wrapper {
+  position: relative
+}
+
+.img-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 35%;
+  max-width: 3vw;
+  margin: 0 auto;
+}
